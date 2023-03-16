@@ -8,19 +8,110 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!------HEADER SECTION------>
     <div id="header">
+        <nav>
+            <img src="images/logo-png.png" class="logo" />
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
         <div class="container">
-            <nav>
-                <img src="images/logo-png.png" class="logo" />
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="header-text">
+                <p>Software Engineer/Web Dev</p>
+                <h1>Evann Fries: <span class="slider">Front-End Design</span></h1>
+            </div>
         </div>
     </div>
+
+    <!-------ABOUT SECTION------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/EEgreen.jpg" alt="E&E">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="subtitle" >About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error magni velit quam vero ad quia. Alias consequatur eaque provident qui tempora veniam labore in cupiditate dolor illum. Commodi, eos veniam?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>HTML/CSS/JavaScript</span><br>
+                            </li>
+                            <li>
+                                <span>MERN Stack</span><br>
+                            </li>
+                            <li>
+                                <span>SQL/MySQL/PostgreSQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>General Assembly</span><br>
+                                Full-Stack Bootcamp completed (05/22 - 11/22)
+                            </li>
+                            <li>
+                                <span>Southwestern Illinois College</span><br>
+                                Completed courses in marketing (2013)
+                            </li>
+                            <li>
+                                <span>O'Fallon Township High School</span><br>
+                                HS Diploma (2008-2012)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>FedEx Ground/Absopure Water</span><br>
+                                Delivery Driver (12/19 - 08/22)
+                            </li>
+                            <li>
+                                <span>Aramark</span><br>
+                                Driver/Inventory Management (06/18 - 10/19)
+                            </li>
+                            <li>
+                                <span>Circle K</span><br>
+                                Assistant Manager (2015-2018)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+ </script>
+    
 </body>
 </html>
