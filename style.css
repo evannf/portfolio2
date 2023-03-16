@@ -126,6 +126,8 @@ nav ul li a::after{
 .tab-titles{
     display: flex;
     margin: 6px 0 40px;
+    color: white; 
+
 }
 .tab-links{
     margin-right: 50px;
@@ -138,9 +140,9 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: black;
+    background: rgb(208,251,0);
     position: absolute;
-    left: 10px;
+    left: 12px;
     bottom: 8px;
     transition: 0.5s
 }
@@ -150,7 +152,9 @@ nav ul li a::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px o;
+    margin: 6px 0;
+    padding: 10px;
+
 }
 
 .tab-contents ul li span{
