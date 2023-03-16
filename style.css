@@ -17,7 +17,51 @@ body{
     background-position: center;
 }
 
-.logo{
-    width: 20%;
+.container{
+    padding: 6px 10%;
+    background-color: rgb(52,52,50);
+}
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 25%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px ;
+    position: relative;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: rgb(208,251,0);
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(208,251,0);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
