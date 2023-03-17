@@ -169,3 +169,21 @@ nav ul li a::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+.icons{
+    display: flex;
+    flex: row;
+}
+.icons2{
+    display: flex;
+    flex: row;
+}
+
+.icons img{
+    max-width: 100%;
+    max-height: 140px;
+}
+.icons2 img{
+    max-width: 100%;
+    max-height: 100px;
+}
