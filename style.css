@@ -12,7 +12,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/binary3.jpg);
+    background-image: url(assets/binary3.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -115,12 +115,14 @@ nav ul li a::after{
     color: white;
     padding-top: 10px;
     padding-left: 15px;
+    text-decoration: underline;
+    text-decoration-color: rgb(208,251,0);
 }
 
 #about p {
     color: rgb(208,251,0);
     padding: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .tab-titles{
@@ -276,19 +278,72 @@ nav ul li a::after{
     flex-direction: row;
     padding: 6px 10%;
 }
-
 .contact-left{
     flex-basis: 35%;
 }
-
 .contact-right{
     flex-basis: 60%;
+}
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color:rgb(52,52,50);
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(208,251,0);
+    font-size: 18px;
 }
 
 .contact-left p{
     margin-top:30px;
 }
-
-.contact i{
-    color: rgb(208,251,0);
+.contact-left p{
+    font-size: 20px;
 }
+.contact p i{
+    color: rgb(208,251,0);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 50px;
+    margin-right:20px;
+    color: rgb(208,251,0);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+.download{
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(208,251,0);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: rgb(52,52,50);
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.download:hover{
+    background-color: rgb(208,251,0);
+    color:rgb(52,52,50);
+}
+
