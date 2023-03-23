@@ -251,7 +251,7 @@ nav ul li a::after{
 
 .link{
     color:  rgb(52,52,50); 
-    margin-top: 20px;
+    margin: 20px;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -260,6 +260,11 @@ nav ul li a::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+
+.fa-github{
+    font-size: 40px;
+    padding-top: 10px;
 }
 
 .link:hover{
@@ -273,6 +278,11 @@ nav ul li a::after{
 
 .project:hover .layer{
     height: 100%;
+}
+
+.layer-icons{
+    display: flex;
+    flex-direction: row;
 }
 
 /* -----CONTACT SECTION----- */
@@ -412,7 +422,7 @@ nav .fa-regular, nav .fa-solid{
     .row{
         flex-direction: column;
     }
-    .about-col-1:{
+    .about-col-1{
         margin-bottom: 20px;
     }
 
