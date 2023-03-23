@@ -126,7 +126,7 @@ nav ul li a::after{
 #about p {
     color: rgb(208,251,0);
     padding: 15px;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .tab-titles{
@@ -135,12 +135,13 @@ nav ul li a::after{
     color: white; 
 
 }
+
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    font-size: 22px;
 }
 .tab-links::after{
     content: '';
@@ -165,7 +166,7 @@ nav ul li a::after{
 
 .tab-contents ul li span{
     color:  rgb(208,251,0);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .tab-contents{
@@ -176,13 +177,11 @@ nav ul li a::after{
     display: block;
 }
 
-.icons{
+.icons, .icons2{
     display: flex;
     flex: row;
-}
-.icons2{
-    display: flex;
-    flex: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .icons img{
@@ -192,6 +191,10 @@ nav ul li a::after{
 .icons2 img{
     max-width: 100px;
     max-height: 100px;
+}
+
+li{
+    font-size: 18px;
 }
 
 /* ----PORTFOLIO SECTION----- */
@@ -437,5 +440,8 @@ nav .fa-regular, nav .fa-solid{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .tab-links{
+        font-size: 18px;
     }
 }
