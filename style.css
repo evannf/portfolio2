@@ -81,9 +81,58 @@ nav ul li a::after{
     margin-top: 20px;
 }
 
-.slider{
+/* .slider{
     color:  rgb(208,251,0);
-}
+    display: block;
+    flex-direction: column;
+    font-size: 46px;
+    border-right: .1em solid rgb(208,251,0);
+    overflow: hidden;
+    border-right: .15em solid rgb(208,251,0); 
+    white-space: nowrap;    
+    margin: 0 auto; 
+    letter-spacing: .01em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(208,251,0); }
+  } */
+
+  .slider{
+    color: rgb(208,251,0);
+    color:#0000;
+    background:
+        linear-gradient(-90deg,rgb(208,251,0) 5px,#0000 0) 10px 0,
+        linear-gradient(rgb(208,251,0) 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+
+    
+    animation: 
+      b .1s infinite steps(1),   
+      t calc(var(--n)*.1s) steps(var(--n)) forwards,
+      blink-caret .75s step-end infinite;
+    }
+    
+    @keyframes t{
+        from {background-size:0 200%}
+    }
+    @keyframes b{
+        50% {background-position:0 -100%,0 0}
+    }
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(208,251,0); }
+      } */
+  
 
 /* ----ABOUT SECTION----- */
 
@@ -439,5 +488,8 @@ nav .fa-regular, nav .fa-solid{
     }
     .tab-links{
         font-size: 18px;
+    }
+    .slider{
+        font-size: 36px;
     }
 }
