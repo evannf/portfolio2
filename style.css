@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background: #080808;
+    background-color: rgb(0,28,5);
     color: white;
 }
 
@@ -139,6 +139,9 @@ nav ul li a::after{
 #about{
     padding: 80px 0;
     color: white;
+    background-color: rgb(0,28,5);
+}
+.containter{
     background-color: rgb(0,28,5);
 }
 
