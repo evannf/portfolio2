@@ -502,6 +502,6 @@ nav .fa-regular, nav .fa-solid{
         justify-content: center;    
     }
     .project-list .project img{
-        max-width: 400px;
+        max-width: 350px;
     }
 }
