@@ -126,7 +126,7 @@ nav ul li a::after{
 #about p {
     color: rgb(208,251,0);
     padding: 15px;
-    /* font-size: 18px; */
+    font-size: 18px;
 }
 
 .tab-titles{
@@ -177,7 +177,7 @@ nav ul li a::after{
     display: block;
 }
 
-.icons, .icons2{
+.icons{
     display: flex;
     flex: row;
     align-items: center;
@@ -185,12 +185,8 @@ nav ul li a::after{
 }
 
 .icons img{
-    max-width: 100px;
-    max-height: 100px;
-}
-.icons2 img{
-    max-width: 100px;
-    max-height: 100px;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 li{
