@@ -185,7 +185,6 @@ nav ul li a::after{
     display: flex;
     margin: 6px 0 40px;
     color: white; 
-
 }
 
 .tab-links{
@@ -284,7 +283,7 @@ li{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 20px;
     text-align: center;
     font-size: 18px;
     color: rgb(208,251,0);
@@ -504,4 +503,23 @@ nav .fa-regular, nav .fa-solid{
     .project-list .project img{
         max-width: 350px;
     }
+    .tab-links{
+        margin-right: 20px;
+    }
+    .layer h3{
+        padding-top:25px;
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    .layer p{
+        padding-top: 0;
+        font-size: 16px;
+    }
+    .fa-github{
+        font-size: 30px;
+        padding-top: 16px;
+        /* width: 50px;
+        height: 50px; */
+    }
+
 }
