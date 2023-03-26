@@ -399,10 +399,10 @@ form input, form textarea{
 
 .download{
     display: inline-block;
-    margin: 50px auto;
+    margin: 50px 0px;
     width: fit-content;
     border: 1px solid rgb(208,251,0);
-    padding: 14px 50px;
+    padding: 14px 100px;
     border-radius: 6px;
     text-decoration: none;
     background-color: rgb(52,52,50);
