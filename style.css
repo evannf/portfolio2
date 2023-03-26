@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: Courier, monospace; */
+    font-family: 'Space Mono', monospace;
+
 }
 
 html{
@@ -72,12 +75,12 @@ nav ul li a::after{
 }
 
 .header-text{
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 15%;
+    font-size: 26px;
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 55px;
     margin-top: 20px;
 }
 
@@ -477,6 +480,9 @@ nav .fa-regular, nav .fa-solid{
 
     .header-text{
         margin-top: 10px;
+    }
+    .header-text h1{
+        font-size: 45px;
     }
     .header-text p{
         margin-bottom: 50px;
