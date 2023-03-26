@@ -196,6 +196,7 @@ nav ul li a::after{
     cursor: pointer;
     position: relative;
     font-size: 22px;
+    width: fit-content;
 }
 .tab-links::after{
     content: '';
@@ -495,7 +496,7 @@ nav .fa-regular, nav .fa-solid{
     }
     .tab-links{
         font-size: 16px;
-        margin-right: 1px;
+        margin-right: 0;
     }
     .slider{
         font-size: 36px;
