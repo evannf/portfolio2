@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     /* font-family: Courier, monospace; */
-    /* font-family: 'Space Mono', monospace; */
+    font-family: 'Space Mono', monospace;
 
 }
 
@@ -181,7 +181,7 @@ nav ul li a::after{
 #about p {
     color: rgb(208,251,0);
     padding: 15px;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .tab-titles{
@@ -494,7 +494,8 @@ nav .fa-regular, nav .fa-solid{
         align-items: center;
     }
     .tab-links{
-        font-size: 18px;
+        font-size: 16px;
+        margin-right: 5px;
     }
     .slider{
         font-size: 36px;
@@ -508,9 +509,6 @@ nav .fa-regular, nav .fa-solid{
     }
     .project-list .project img{
         max-width: 350px;
-    }
-    .tab-links{
-        margin-right: 10px;
     }
     .layer h3{
         padding-top:25px;
