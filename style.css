@@ -85,7 +85,7 @@ nav ul li a::after{
     margin-top: 20px;
 }
 
-.header-text h1, .header-text p, .header-text span, .subtitle, .download{
+.header-text h1, .header-text p, .header-text span, .subtitle{
     font-family: 'Space Mono', monospace;
 
 }
