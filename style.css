@@ -426,6 +426,13 @@ form .download{
     cursor: pointer;
 }
 
+#msg{
+    color: rgb(208,251,0);
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
 /* ----REPONSIVITY---- */
 nav .fa-regular, nav .fa-solid{
     display: none;
