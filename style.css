@@ -162,7 +162,7 @@ nav ul li a::after{
 #about p {
     color: rgb(208,251,0);
     padding: 15px;
-    font-size: 18px; /* CHANGE FOR FONT DEBUG */
+    font-size: 18px;
 }
 
 .tab-titles{
